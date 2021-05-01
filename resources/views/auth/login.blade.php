@@ -5,7 +5,7 @@
         <div class="card-header bg-secondary">
             <h2 class="mb-0 text-light">Sign in</h2>
         </div>
-        <form method="POST" class="card-body" action="{{url("/auth/login")}}">
+        <form method="POST" class="card-body bg-dark text-white" action="{{url("/auth/login")}}">
             @include("auth.includes.baseform")
             <button class="btn btn-primary btn-block mb-2" type="submit">Login</button>
             <p>Don't have an account? <a href="{{url("/auth/register")}}">Sign up</a></p>

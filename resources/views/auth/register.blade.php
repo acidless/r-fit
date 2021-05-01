@@ -5,7 +5,7 @@
     <div class="card-header bg-secondary">
         <h2 class="mb-0 text-light">Sign up</h2>
     </div>
-    <form method="POST" class="card-body" action="{{url("/auth/register")}}">
+    <form method="POST" class="card-body bg-dark text-white" action="{{url("/auth/register")}}">
         @include("auth.includes.baseform")
         <div class="form-group">
             <label class="lead" for="password_confirmation">Password Confirm</label>

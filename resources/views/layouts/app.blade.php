@@ -9,8 +9,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <style>
-        .material-icons{
+        .material-icons {
             user-select: none;
+        }
+
+        body {
+            background-color: #1b1e21;
         }
     </style>
 </head>
@@ -36,6 +40,7 @@
         </div>
     </main>
 </div>
+@include("layouts.includes.globalError")
 <script src="{{ asset("js/app.js") }}"></script>
 </body>
 </html>

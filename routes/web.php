@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\User\UserWeight\UserWeightController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,8 @@ Route::prefix("auth")->group(function () {
         Route::get("/", [AuthController::class, "showRegister"]);
         Route::post("/", [AuthController::class, "register"]);
     });
+});
+
+Route::prefix("me")->group(function () {
+    Route::resource("weight", UserWeightController::class);
 });
