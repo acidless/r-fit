@@ -20,6 +20,7 @@ class AuthController extends Controller
 
     public function __construct()
     {
+        $this->middleware("auth")->only("logout");
         $this->userService = app(UserService::class);
     }
 
@@ -88,5 +89,12 @@ class AuthController extends Controller
         }
 
         return back()->withInput($request->input());
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        return redirect("/");
     }
 }

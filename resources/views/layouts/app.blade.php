@@ -25,6 +25,11 @@
             <a class="navbar-brand" href="{{url("/")}}">R-Fit</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
+                    @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url("/auth/logout")}}">Logout</a>
+                        </li>
+                    @endauth
                     @guest
                         <li class="nav-item">
                             <a class="nav-link" href="{{url("/auth/login")}}">Login</a>

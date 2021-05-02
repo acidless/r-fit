@@ -25,9 +25,7 @@ class UserWeightController extends Controller
      */
     public function index()
     {
-        $weightData = $this->weightService->getWeightData(
-            Auth::user()->getAuthIdentifier()
-        );
+        $weightData = $this->weightService->getWeightData(Auth::id());
 
         return view("welcome", compact("weightData"));
     }
@@ -56,7 +54,7 @@ class UserWeightController extends Controller
             ]);
         }
 
-        $userId = Auth::user()->getAuthIdentifier();
+        $userId = Auth::id();
 
         $this->weightService->addWeight($userId, $request->get("amount"));
 

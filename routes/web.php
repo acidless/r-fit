@@ -27,6 +27,8 @@ Route::prefix("auth")->group(function () {
         Route::get("/", [AuthController::class, "showRegister"]);
         Route::post("/", [AuthController::class, "register"]);
     });
+
+    Route::get("logout", [AuthController::class, "logout"]);
 });
 
 Route::prefix("me")->group(function () {
