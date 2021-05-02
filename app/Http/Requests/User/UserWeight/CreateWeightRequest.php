@@ -24,7 +24,7 @@ class CreateWeightRequest extends FormRequest
     public function rules()
     {
         return [
-            "amount" => "required|integer|min:3|max:500",
+            "amount" => "required|numeric|min:3|max:500",
         ];
     }
 }

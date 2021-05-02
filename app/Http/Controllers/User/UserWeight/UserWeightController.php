@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\User\UserWeight;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\User\UserWeight\CreateWeightRequest;
 use App\Services\WeightService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\User\UserWeight\CreateWeightRequest;
 
 class UserWeightController extends Controller
 {
@@ -25,7 +25,11 @@ class UserWeightController extends Controller
      */
     public function index()
     {
-        //
+        $weightData = $this->weightService->getWeightData(
+            Auth::user()->getAuthIdentifier()
+        );
+
+        return view("welcome", compact("weightData"));
     }
 
     /**

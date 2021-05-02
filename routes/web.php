@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/", function () {
-    return view("welcome");
-})->middleware("auth");
+Route::get("/", [UserWeightController::class, "index"]);
 
 Route::prefix("auth")->group(function () {
     Route::prefix("login")->group(function () {
