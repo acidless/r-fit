@@ -115,6 +115,22 @@ class UserWeightController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $weight = $this->weightService->deleteWeight(Auth::id(), $id);
+
+        if ($weight) {
+            $response = back()->with([
+                "message" => "Successfully removed weight data!",
+            ]);
+
+            if ($weight->created_at->day == now()->day) {
+                return $response->withoutCookie("wsa", "/");
+            }
+
+            return $response;
+        }
+
+        return back()->withErrors([
+            "message" => "Weight with this ID not found!",
+        ]);
     }
 }

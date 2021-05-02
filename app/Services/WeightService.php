@@ -23,4 +23,16 @@ class WeightService
             "user_id" => $userId,
         ]);
     }
+
+    public function deleteWeight($userId, $weightId)
+    {
+        $weight = Weight::query()
+            ->where("user_id", "=", $userId)
+            ->find($weightId);
+
+        if ($weight) {
+            $weight->delete();
+            return $weight;
+        }
+    }
 }
