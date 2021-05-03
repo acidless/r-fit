@@ -34,5 +34,7 @@ Route::prefix("auth")->group(function () {
 Route::prefix("me/weight")->group(function () {
     Route::get("graph", [UserWeightController::class, "graph"]);
 
-    Route::resource("/", UserWeightController::class);
+    Route::resource("/", UserWeightController::class, [
+        "only" => ["index", "store", "destroy"],
+    ]);
 });

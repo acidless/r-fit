@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b2bc9e8-2b43-48e0-939d-9e16692362a9" name="Default Changelist" comment="Added pagination">
-      <change afterPath="$PROJECT_DIR$/resources/js/graph/graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/chart.blade.php" afterDir="false" />
+    <list default="true" id="4b2bc9e8-2b43-48e0-939d-9e16692362a9" name="Default Changelist" comment="Added weight graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserWeight/UserWeightController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserWeight/UserWeightController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/WeightService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/WeightService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +211,7 @@
       <workItem from="1619863174440" duration="1092000" />
       <workItem from="1619870932901" duration="6266000" />
       <workItem from="1619946412186" duration="9860000" />
-      <workItem from="1620025069166" duration="5898000" />
+      <workItem from="1620025069166" duration="8865000" />
     </task>
     <task id="LOCAL-00001" summary="Project init">
       <created>1619453340540</created>
@@ -272,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620029780218</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added weight graph">
+      <created>1620039546350</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620039546350</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +295,8 @@
     <MESSAGE value="Added weight data list" />
     <MESSAGE value="Added delete weight feature" />
     <MESSAGE value="Added pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pagination" />
+    <MESSAGE value="Added weight graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added weight graph" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
