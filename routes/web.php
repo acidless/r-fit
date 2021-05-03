@@ -31,6 +31,8 @@ Route::prefix("auth")->group(function () {
     Route::get("logout", [AuthController::class, "logout"]);
 });
 
-Route::prefix("me")->group(function () {
-    Route::resource("weight", UserWeightController::class);
+Route::prefix("me/weight")->group(function () {
+    Route::get("graph", [UserWeightController::class, "graph"]);
+
+    Route::resource("/", UserWeightController::class);
 });

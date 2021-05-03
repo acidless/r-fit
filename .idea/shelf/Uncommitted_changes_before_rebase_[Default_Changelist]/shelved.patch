@@ -1,0 +1,17 @@
+Index: public/js/app.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/public/js/app.js b/public/js/app.js
+--- a/public/js/app.js	
++++ b/public/js/app.js	
+@@ -311,7 +311,7 @@
+   \*****************************/
+ /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+ 
+-eval("__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");\n\n__webpack_require__(/*! ./login/login */ \"./resources/js/login/login.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzPzZkNDAiXSwibmFtZXMiOlsicmVxdWlyZSJdLCJtYXBwaW5ncyI6IkFBQUFBLG1CQUFPLENBQUMsZ0RBQUQsQ0FBUDs7QUFDQUEsbUJBQU8sQ0FBQyxvREFBRCxDQUFQIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL2FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbInJlcXVpcmUoXCIuL2Jvb3RzdHJhcFwiKTtcbnJlcXVpcmUoXCIuL2xvZ2luL2xvZ2luXCIpO1xuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
++eval("__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");\n\n__webpack_require__(/*! ./login/login */ \"./resources/js/login/login.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzPzZkNDAiXSwibmFtZXMiOlsicmVxdWlyZSJdLCJtYXBwaW5ncyI6IkFBQUFBLG1CQUFPLENBQUMsZ0RBQUQsQ0FBUDs7QUFDQUEsbUJBQU8sQ0FBQyxvREFBRCxDQUFQIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL2pzL2FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbInJlcXVpcmUoXCIuL2Jvb3RzdHJhcFwiKTtcclxucmVxdWlyZShcIi4vbG9naW4vbG9naW5cIik7XHJcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
+ 
+ /***/ }),
+ 

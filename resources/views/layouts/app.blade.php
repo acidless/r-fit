@@ -54,5 +54,6 @@
 </div>
 @include("layouts.includes.globalError")
 <script src="{{ asset("js/app.js") }}"></script>
+@yield("scripts")
 </body>
 </html>

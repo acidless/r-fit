@@ -30,6 +30,13 @@ class UserWeightController extends Controller
         return view("welcome", compact("weightData"));
     }
 
+    public function graph()
+    {
+        $weightData = $this->weightService->getWeightData(Auth::id());
+
+        return view("pages.chart", compact("weightData"));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

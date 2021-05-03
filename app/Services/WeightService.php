@@ -13,7 +13,7 @@ class WeightService
             ->find($userId)
             ->weight()
             ->orderByDesc("created_at")
-            ->paginate(5);
+            ->paginate(30);
     }
 
     public function addWeight($userId, $amount)
