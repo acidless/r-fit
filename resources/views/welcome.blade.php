@@ -25,8 +25,9 @@
             <div class="card-body"></div>
         </div>
     </div>
-    <div class="row">
-        @include("includes.weightList")
+    @include("includes.weightList")
+    <div class="d-flex justify-content-center">
+        {{$weightData->links()}}
     </div>
 @endauth
 @endsection

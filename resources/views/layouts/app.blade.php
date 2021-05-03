@@ -16,6 +16,13 @@
         body {
             background-color: #1b1e21;
         }
+
+        .page-link, .page-item.disabled .page-link{
+            user-select: none;
+            background-color: var(--dark);
+            border-color: var(--dark);
+            color:var(--success);
+        }
     </style>
 </head>
 <body>

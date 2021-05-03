@@ -12,8 +12,8 @@ class WeightService
         return User::query()
             ->find($userId)
             ->weight()
-            ->get()
-            ->sortByDesc("created_at");
+            ->orderByDesc("created_at")
+            ->paginate(5);
     }
 
     public function addWeight($userId, $amount)
